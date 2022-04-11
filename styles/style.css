@@ -1,0 +1,316 @@
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    background-color: rgba(250, 250, 250, 0.9);
+}
+
+main {
+    flex-grow: 1;
+}
+
+article {
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 149, 246, .7);
+}
+
+
+.inside-app {
+    align-self: center;
+    background-image: url(/assets/mock.png);
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+    flex-basis: 380.32px;
+    height: 581.15px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+}
+
+.images-loop {
+    margin: 27px 0 0 113px;
+    position: relative;
+}
+
+
+.img-loop {
+    height: 538.84px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    width: 250px;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+.login-content-wrapper {
+    min-height: 100%;
+    min-width: 0;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
+.content {
+    color: rgba(38, 38, 38, 1);
+    max-width: 350px;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.sign-in {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.logo-container {
+    margin-top: 36px;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.form-container {
+    margin-top: 24px;
+    margin-bottom: 10px;
+    max-width: 350px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+form {
+    flex-direction: column;
+}
+
+.form-field {
+    margin: 0 40px 6px;
+}
+
+.form-input-container {
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid rgba(219, 219, 219, 1);
+    color: rgba(38, 38, 38, 1);
+}
+
+.form-input {
+    width: 100%;
+    padding: 9px 0 7px 8px;
+    background: rgba(250, 250, 250, 1);
+}
+
+.form-input,
+.form-input:focus-visible {
+    border: 0;
+    outline: 0;
+
+}
+
+.field-label {
+    display: flex;
+    flex: 1 0 0;
+    height: 36px;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    position: relative;
+}
+
+.form-submit {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    margin: 12px 40px
+}
+
+.form-button {
+    background-color: rgba(0, 149, 246);
+    color: rgba(255, 255, 255, 1);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.form-button:active {
+    background-color: rgba(0, 149, 246, .7);
+}
+
+.or-wrapper {
+    margin: 10px 40px 18px;
+    flex-direction: row;
+}
+
+.or-line {
+    background-color: rgba(219, 219, 219, 1);
+    flex: 1;
+    height: 1px;
+    position: relative;
+    top: 0.45em;
+}
+
+.or-content {
+    color: rgba(142, 142, 142, 1);
+    flex: 1;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 5px;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.login-with-facebook-wrapper {
+    display: flex;
+    flex: 0 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    margin-left: 40px;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.login-with-facebook-button {
+    background: 0 0;
+    color: rgba(0, 149, 246, 1);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: center;
+    text-overflow: ellipsis;
+    line-height: 18px;
+    width: auto;
+    user-select: none;
+}
+
+.sprite-facebook-logo {
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    background-image: url(/assets/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 19px;
+    width: 19px;
+}
+
+.login-with-facebook-text {
+    color: #385185;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: rgba(0, 55, 107, 1);
+    line-height: 16px;
+    margin-top: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sign-up {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.create-account {
+    display: block;
+    color: rgba(142, 142, 142, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3 0 -4px;
+}
+
+.create-account-text {
+    color: rgba(38, 38, 38, 1);
+    font-size: inherit;
+    margin: 15px;
+    text-align: center;
+}
+
+.app-text {
+    color: rgba(38, 38, 38, 1);
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.badges {
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px 0 10px 0;
+}
+
+.badge-link {
+    margin-right: 8px;
+}
+
+.badge-image {
+    height: 48px;
+}
